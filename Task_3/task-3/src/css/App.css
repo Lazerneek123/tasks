@@ -1,0 +1,71 @@
+header {
+  background-color: #033091c6;
+  display: flex;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  border-bottom: 2px solid black;
+  border-radius: 30px
+}
+
+p {
+  margin: 5px;
+  align-items: center;
+}
+
+.palletes {
+  justify-content: center;
+  border-radius: 30px;
+  padding: 10px;
+  border-bottom: 2px solid black;
+  color: white;
+  background-color: #1d56d1c6;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@keyframes hover {
+  0% {background-color: white;}
+  100% {background-color: #1dd162c6;}
+}
+
+@keyframes out {
+  0% {background-color: #e64b24c6;}
+  100% {background-color: white;}
+}
+
+.palletes > div {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  width: 25%;
+  color: black;
+  background-color: white;
+  animation-name: out;
+  animation-duration: 2s;
+}
+
+.palletes > div:hover {
+  background-color: #d6dce9c6;
+  animation-name: hover;
+  animation-duration: 1s;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+.emoji {
+  float: right;
+}
+
+.colors {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 10px;
+}
+
+.colors > div {
+  width: 20%;
+  height: 50px;
+}
