@@ -1,0 +1,182 @@
+header {
+  justify-content: center;
+  background-color: white;
+  display: flex;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  border-radius: 30px
+}
+
+p {
+  margin: 5px;
+  align-items: center;
+}
+
+.palletes {
+  justify-content: center;
+  border-radius: 30px;
+  padding: 10px;
+  color: white;
+  background-color: white;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@keyframes hover {
+  0% {
+    background-color: white;
+  }
+
+  100% {
+    background-color: #1dd162c6;
+  }
+}
+
+@keyframes out {
+  0% {
+    background-color: #e64b24c6;
+  }
+
+  100% {
+    background-color: white;
+  }
+}
+
+.palletes>div {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  width: 40%;
+  color: black;
+  background-color: white;
+  animation-name: out;
+  animation-duration: 2s;
+}
+
+.palletes>div:hover {
+  background-color: #d6dce9c6;
+  animation-name: hover;
+  animation-duration: 1s;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+.emoji {
+  float: right;
+}
+
+.colors {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 10px;
+}
+
+.colors>div {
+  width: 20%;
+  height: 50px;
+}
+
+.search {
+  width: 264px;
+  height: 24px;
+
+  /* Text md/Regular */
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  border: 1px solid #D0D5DD;
+  color: #667085;
+
+
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+}
+
+.title-main {
+  width: 960px;
+  height: 60px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: #101828;
+
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.title {
+  width: 768px;
+  height: 30px;
+
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  
+  text-align: center;
+
+  color: #475467;
+
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.image {
+  border-radius: 16px;
+}
+
+.title-blog {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+
+  color: #101828;
+
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+.title-content {
+  width: 384px;
+  height: 48px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #475467;
+
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
